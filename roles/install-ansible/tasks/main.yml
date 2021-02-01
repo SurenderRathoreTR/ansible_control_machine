@@ -1,0 +1,44 @@
+---
+# tasks file for install-ansible
+#  - name: add group
+#   user: 
+#      name: surender.rathore@ad.highqsolutions.com
+#      group: wheel
+
+  - name: install ansible and required packages
+    yum:
+      name:
+        - epel-release
+      state: latest
+    register: epel1
+
+  - name: printing epel output
+    debug:
+      var: epel1
+
+  - name: install ansible and required packages 
+    yum:
+      name:
+        - ansible
+        - platform-python-devel
+        - krb5-workstation
+        - krb5-pkinit
+        - krb5-devel
+        - gcc
+        - vim
+        - git
+        - subversion
+        - wget
+      state: latest
+    register: hello 
+      
+  - name: printing output
+    debug: 
+      var: hello
+
+  - name: Install pip packages
+    pip:
+      name: 
+        - pywinrm
+        - pywinrm[kerberos]
+        - pymssql

@@ -1,0 +1,15 @@
+---
+# tasks file for install-ansible
+#  - name: add group
+#   user: 
+#      name: surender.rathore@ad.highqsolutions.com
+#      group: wheel
+- name: Download mysql
+  get_url:
+    url: https://raw.githubusercontent.com/melmorabity/ansible-mssql-query/master/mssql_query.py
+    dest: /usr/share/ansible/plugins/modules/mssql_query.py
+  register: mysql
+
+- name: printing output
+  debug: 
+    var: mysql

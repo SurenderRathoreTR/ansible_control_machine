@@ -1,0 +1,19 @@
+---
+# tasks file for install-ansible
+#  - name: add group
+#   user: 
+#      name: surender.rathore@ad.highqsolutions.com
+#      group: wheel
+- name: copy and replace mysql file
+  copy:
+    src: /usr/lib/python3.6/site-packages/ansible/modules/database/mssql/mssql_db.py
+    dest: /usr/lib/python3.6/site-packages/ansible/modules/database/mssql/mssql_db.py
+    owner: root
+    group: root
+    mode: 0644
+    backup: yes
+  register: mysql_copy
+
+- name: printing output
+  debug: 
+    var: mysql_copy

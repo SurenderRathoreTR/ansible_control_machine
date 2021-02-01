@@ -1,0 +1,28 @@
+[all]
+#192.168.13.167 ansible_connection=local ansible_user=surender.rathore@ad.highqsolutions.com ansible_password=
+
+192.168.23.167 ansible_connection=ssh ansible_user=surender.rathore@ad.highqsolutions.com ansible_password=
+192.168.13.168 ansible_connection=ssh ansible_user=surender.rathore@ad.highqsolutions.com ansible_password=
+
+192.168.23.168 ansible_connection=ssh ansible_user=surender.rathore@ad.highqsolutions.com ansible_password=
+192.168.53.168 ansible_connection=ssh ansible_user=surender.rathore@ad.highqsolutions.com ansible_password=
+
+192.168.63.168 ansible_connection=ssh ansible_user=surender.rathore@ad.highqsolutions.com ansible_password=
+192.168.133.168 ansible_connection=ssh ansible_user=surender.rathore@ad.highqsolutions.com ansible_password=
+
+192.168.143.168 ansible_connection=ssh ansible_user=surender.rathore@ad.highqsolutions.com ansible_password=
+192.168.113.168 ansible_connection=ssh ansible_user=surender.rathore@ad.highqsolutions.com ansible_password=
+
+192.168.123.168 ansible_connection=ssh ansible_user=surender.rathore@ad.highqsolutions.com ansible_password=
+192.168.153.168 ansible_connection=ssh ansible_user=surender.rathore@ad.highqsolutions.com ansible_password=
+
+192.168.163.168 ansible_connection=ssh ansible_user=surender.rathore@ad.highqsolutions.com ansible_password=
+192.168.93.168 ansible_connection=ssh ansible_user=surender.rathore@ad.highqsolutions.com ansible_password=
+
+192.168.103.168 ansible_connection=ssh ansible_user=surender.rathore@ad.highqsolutions.com ansible_password=
+192.168.73.168 ansible_connection=ssh ansible_user=surender.rathore@ad.highqsolutions.com ansible_password=
+
+192.168.83.168 ansible_connection=ssh ansible_user=surender.rathore@ad.highqsolutions.com ansible_password=
+
+[test1]
+192.168.83.168 ansible_connection=ssh ansible_user=surender.rathore@ad.highqsolutions.com ansible_password=
